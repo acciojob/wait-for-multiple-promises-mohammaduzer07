@@ -36,8 +36,8 @@ async function callFunc(){
 		results.forEach((e)=>{
 			ans.innerHTML += `
 				<tr>
-					<td>${e.name}<td>
-					<td>${e.time}<td>
+					<td>${e.name}</td>
+					<td>${e.time}</td>
 				</tr>
 				`;
 		});
