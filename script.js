@@ -25,16 +25,16 @@ const promises = [
 async function callFunc(){
 	const start = new Date();
 
-	res.innerHTML += `
+	ans.innerHTML += `
 		<tr id="loading">
 			<td colspan=2>Loading...</td>
 		</tr>
 		`;
 	await Promise.all(promises)
 	.then((results)=>{
-		res.innerHTML = ``;
+		ans.innerHTML = ``;
 		results.forEach((e)=>{
-			res.innerHTML += `
+			ans.innerHTML += `
 				<tr>
 					<td>${e.name}<td>
 					<td>${e.time}<td>
@@ -49,7 +49,7 @@ async function callFunc(){
 	const end = new Date();
 	let timeInmilisec = end-start;
 
-	res.innerHTML += `
+	ans.innerHTML += `
 		<tr>
 			<td>Total</td>
 			<td>${timeInmilisec / 1000}</td>
