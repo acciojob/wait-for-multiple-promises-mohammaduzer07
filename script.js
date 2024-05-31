@@ -8,16 +8,16 @@ const promises = [
 			resolve({name: "Promise 1", time: time/1000})
 		}, time);
 	}),
-	new Promsise((resolve)=>{
+	new Promise((resolve)=>{
 		const time = Math.floor(Math.random() * 3+1) * 1000;
 		setTimeout(()=>{
 			resolve({name: "Promise 2", time: time / 1000})
 		}, time);
 	}),
-	new Promsise((resolve)=>{
+	new Promise((resolve)=>{
 		const time = Math.floor(Math.random() * 3+1) * 1000;
 		setTimeout(()=>{
-			resolve({name: "Promise 2", time: time / 1000})
+			resolve({name: "Promise 3", time: time / 1000})
 		}, time);
 	}),
 ];
